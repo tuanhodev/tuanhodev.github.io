@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>AnhTuan Developer</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="assets/css/app.css">
   <script type="text/javascript" src="assets/js/app.js"></script>
 </head>
@@ -12,14 +13,18 @@
       <header>
         <section class="w-full relative">
           <div class="absolute inset-y-auto inset-x-0 flex justify-between">
-            <div class="brand w-1">
+            <div class="brand w-1/6 flex justify-start">
+              <div class="bg-cover w-10 h-10" style="background: url('/assets/images/avatar.png')" alt="">
               <p>AnhTuan Dev</p>
             </div>
-            <ul class="w-full space-6 flex">
-              <li class="px-4 py-2 rounded-md hover:bg-themePrimary">menu item 1</li>
-              <li class="px-4 py-2 rounded-md hover:bg-themePrimary">menu item 2</li>
-              <li class="px-4 py-2 rounded-md hover:bg-themePrimary">menu item 3</li>
-            </ul>
+            <div class="w-full space-x-6 flex">
+              <a href="/" class="px-4 py-2 rounded-md text-lg font-medium text-themeOnPrimary hover:bg-themePrimary">
+                <span class="material-icons">home</span>Home
+              </a>
+              <a href="/about" class="px-4 py-2 rounded-md text-lg font-medium text-themeOnPrimary hover:bg-themePrimary">
+                <span class="material-icons">home</span>About
+              </a>
+            </div>
           </div>
           <div 
             class="top-panner w-full h-96"
