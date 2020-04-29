@@ -21041,8 +21041,8 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/anhtuan/Development/Laravel/tuanblog/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/anhtuan/Development/Laravel/tuanblog/resources/sass/thd.scss */"./resources/sass/thd.scss");
+__webpack_require__(/*! /home/anhtuan/Development/Laravel/dev-0.2/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/anhtuan/Development/Laravel/dev-0.2/resources/sass/thd.scss */"./resources/sass/thd.scss");
 
 
 /***/ })
