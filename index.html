@@ -7,47 +7,118 @@
   <link type="text/css" rel="stylesheet" href="assets/css/app.css">
   <script type="text/javascript" src="assets/js/app.js"></script>
 </head>
+
 <body>
-  <div class="app">
-    <div class="w-full min-h-screen">
-      <header>
-        <section class="w-full relative">
-          <div class="absolute inset-y-auto inset-x-0 w-full">
 
-            <div class="w-full flex justify-between py-2">
+<style>
 
-              <div class="brand w-1/6 flex justify-start">
-                <div class="bg-cover w-10 h-10" 
-                  style="background: url('/assets/images/panner/top-panner.png')"
-                  alt="Anh Tuan Dev">
-                </div>
-                <p>AnhTuan Dev</p>
+.panner {
+  height: 679px;
+}
+.avatar:hover {
+  scale: 1.2;
+  transition-duration: .5s !important;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+}
+.avatar img:hover {
+  transition-duration: .2s !important;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+  scale: 1.1;
+  transition-duration: .3s !important;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transition-duration: .5s !important;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: #6c15e8;
+  scale: 1.02;
+}
+
+.title-transform:hover {
+  transition-duration: .3s !important;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+  transform:translateX(5px);
+}
+
+
+</style>
+
+<div class="app">
+  <div class="w-full min-h-screen">
+
+    <!-- top header -->
+    <header class="mb-4">
+      <section 
+        class="panner w-full relative bg-cover"
+        style="background: url('assets/images/panner/panner_bg.svg')"
+        >
+        <div class="absolute inset-y-auto inset-x-0 w-full">
+
+          <div class="w-full flex justify-between py-4 pxx-6 lg:px-12">
+
+            <div class="brand w-1/6 flex justify-start items-center text-themeOnPrimary uppercase font-bold text-xl">
+              <div class="avatar w-10 h-10 object-cover mr-3">
+                <img class="w-full h-full rounded-full" src="assets/images/avatar.png" />
               </div>
-              
-              <div class="w-full space-x-6 flex justify-end pr-12">
-                <a href="/" 
-                  class="flex px-4 py-2 items-center rounded-full text-lg font-medium text-themeOnPrimary hover:bg-themePrimary">
-                  <span class="material-icons text-md mr-1">home</span>Home
-                </a>
-                <a href="/about"
-                  class="flex px-4 py-2 items-center rounded-full text-lg font-medium text-themeOnPrimary hover:bg-themePrimary">
-                  <span class="material-icons text-md mr-1">account_balance</span>About
-                </a>
-              </div>
-
+              <p class="title-transform hover:text-yellow-300 cursor-default">AnhTuan Dev</p>
             </div>
+            
+            <nav class="w-full space-x-3 flex justify-end">
+              <a href="/" 
+                class="btn flex px-4 py-2 items-center rounded-full text-lg font-medium text-themeOnPrimary hover:bg-themePrimary">
+                <span class="material-icons text-md mr-1">home</span>Home
+              </a>
+              <a href="/pages/about"
+                class="btn flex px-4 py-2 items-center rounded-full text-lg font-medium text-themeOnPrimary hover:bg-themePrimary">
+                <span class="material-icons text-md mr-1">brightness_auto</span>About
+              </a>
+            </nav>
 
           </div>
 
-          <div 
-            class="top-panner w-full h-96"
-            style="background: url('/assets/images/panner/top-panner.png')"
-            >
-          </div>
+        </div>
 
-        </section>
-      </header>
-    </div>
+      </section>
+    </header>
+    <!-- top header -->
+
+    <section class="px-16 lg:px-40">
+
+      <div class="space-x-8 flex justify-center mb-8">
+        <div class="w-30 h-30 bg-purple-300 p-4 rounded-full shadow-lg flex items-center justify-center">app 1</div>
+        <div class="w-30 h-30 bg-purple-300 p-4 rounded-full shadow-lg flex items-center justify-center">app 2</div>
+        <div class="w-30 h-30 bg-purple-300 p-4 rounded-full shadow-lg flex items-center justify-center">app 3</div>
+      </div>
+
+      <div class="mb-8  px-30w-full flex flex-wrap text-themeText text-lg text-center">
+        <h2 class="w-full text-center text-3xl font-bold mb-4">H2 Title text-3xl</h2>
+        Ipsum id rem fuga voluptatibus quas Consectetur molestias quod cupiditate necessitatibus consequuntur atque Placeat commodi.
+        Ipsum id rem fuga voluptatibus quas Consectetur molestias quod cupiditate necessitatibus consequuntur atque Placeat commodi.
+        Ipsum id rem fuga voluptatibus quas Consectetur molestias quod cupiditate necessitatibus consequuntur atque Placeat commodi.
+        Ipsum id rem fuga voluptatibus quas Consectetur molestias quod cupiditate necessitatibus consequuntur atque Placeat commodi.
+        Ipsum id rem fuga voluptatibus quas Consectetur molestias quod cupiditate necessitatibus consequuntur atque Placeat commodi.
+      </div>
+
+      <div class="space-x-8 flex justify-center mb-8 text-center">
+        <div class="card w-1/4 h-56 bg-indigo-300 p-6 rounded-lg shadow-lg flex items-center justify-center">Card 1</div>
+        <div class="card w-1/4 h-56 bg-indigo-300 p-6 rounded-lg shadow-lg flex items-center justify-center">Card 2</div>
+        <div class="card w-1/4 h-56 bg-indigo-300 p-6 rounded-lg shadow-lg flex items-center justify-center">Card 3</div>
+        <div class="card w-1/4 h-56 bg-indigo-300 p-6 rounded-lg shadow-lg flex items-center justify-center">Card 4</div>
+      </div>
+
+    </section>
+
+
+
+
   </div>
+</div>
 </body>
 </html>
