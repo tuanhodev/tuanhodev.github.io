@@ -8,27 +8,15 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="panner_bg.svg"
-   inkscape:version="1.0rc1 (0bf991bb86, 2020-04-29)"
-   id="svg8"
+   width="1920"
+   height="685"
+   viewBox="0 0 507.99999 181.17616"
    version="1.1"
-   viewBox="0 0 507.99999 179.58922"
-   height="679"
-   width="1920">
+   id="svg8"
+   inkscape:version="1.0rc1 (0bf991bb86, 2020-04-29)"
+   sodipodi:docname="panner_bg.svg">
   <defs
      id="defs2">
-    <linearGradient
-       id="linearGradient895"
-       inkscape:collect="always">
-      <stop
-         id="stop891"
-         offset="0"
-         style="stop-color:#6200ee;stop-opacity:1;" />
-      <stop
-         id="stop893"
-         offset="1"
-         style="stop-color:#3700b3;stop-opacity:1" />
-    </linearGradient>
     <inkscape:path-effect
        message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths."
        hide_clip="false"
@@ -36,74 +24,108 @@
        inverse="true"
        lpeversion="1"
        is_visible="true"
-       id="path-effect887"
+       id="path-effect19"
        effect="powerclip" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient895">
+      <stop
+         style="stop-color:#6200ee;stop-opacity:1;"
+         offset="0"
+         id="stop891" />
+      <stop
+         style="stop-color:#3700b3;stop-opacity:1"
+         offset="1"
+         id="stop893" />
+    </linearGradient>
     <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
+       effect="powerclip"
+       id="path-effect887"
        is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+    <inkscape:path-effect
+       effect="bspline"
        id="path-effect861"
-       effect="bspline" />
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
     <clipPath
-       id="clipPath883"
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath883">
+      <path
+         id="path885"
+         style="display:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.03082"
+         d="M 2468.1059,2379.0451 A 2214.1059,2214.1059 0 0 1 253.99998,4593.1512 2214.1059,2214.1059 0 0 1 -1960.1059,2379.0451 2214.1059,2214.1059 0 0 1 253.99998,164.93897 2214.1059,2214.1059 0 0 1 2468.1059,2379.0451" />
+      <path
+         id="lpe_path-effect887"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.03082"
+         class="powerclip"
+         d="M -4.9999998,-5.0499922 H 512.99999 V 184.60209 H -4.9999998 Z M 2468.1059,2379.0451 A 2214.1059,2214.1059 0 0 0 253.99998,164.93897 2214.1059,2214.1059 0 0 0 -1960.1059,2379.0451 2214.1059,2214.1059 0 0 0 253.99998,4593.1512 2214.1059,2214.1059 0 0 0 2468.1059,2379.0451" />
+    </clipPath>
+    <clipPath
+       id="clipath_lpe_path-effect19"
        clipPathUnits="userSpaceOnUse">
       <path
          d="M 2468.1059,2379.0451 A 2214.1059,2214.1059 0 0 1 253.99998,4593.1512 2214.1059,2214.1059 0 0 1 -1960.1059,2379.0451 2214.1059,2214.1059 0 0 1 253.99998,164.93897 2214.1059,2214.1059 0 0 1 2468.1059,2379.0451"
          style="display:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.03082"
-         id="path885" />
+         id="path21" />
       <path
          d="M -4.9999998,-5.0499922 H 512.99999 V 184.60209 H -4.9999998 Z M 2468.1059,2379.0451 A 2214.1059,2214.1059 0 0 0 253.99998,164.93897 2214.1059,2214.1059 0 0 0 -1960.1059,2379.0451 2214.1059,2214.1059 0 0 0 253.99998,4593.1512 2214.1059,2214.1059 0 0 0 2468.1059,2379.0451"
          class="powerclip"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.03082"
-         id="lpe_path-effect887" />
+         id="lpe_path-effect19" />
     </clipPath>
     <linearGradient
-       gradientUnits="userSpaceOnUse"
-       y2="-0.27682266"
+       y2="8.1126738"
        x2="286.31213"
-       y1="166.08739"
+       y1="139.70953"
        x1="286.31213"
-       id="linearGradient897"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient26"
        xlink:href="#linearGradient895"
        inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
-     inkscape:snap-global="true"
-     inkscape:window-maximized="1"
-     inkscape:window-y="27"
-     inkscape:window-x="52"
-     inkscape:window-height="1016"
-     inkscape:window-width="1868"
-     inkscape:snap-page="true"
-     inkscape:snap-center="true"
-     inkscape:snap-object-midpoints="true"
-     inkscape:snap-midpoints="true"
-     inkscape:snap-smooth-nodes="true"
-     inkscape:object-paths="true"
-     inkscape:snap-intersection-paths="true"
-     borderlayer="false"
-     inkscape:showpageshadow="false"
-     units="px"
-     inkscape:pagecheckerboard="false"
-     showguides="true"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="px"
-     inkscape:cy="246.78369"
-     inkscape:cx="842.25538"
-     inkscape:zoom="0.49497475"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     borderopacity="1.0"
-     bordercolor="#666666"
+     id="base"
      pagecolor="#313131"
-     id="base" />
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="1310.1317"
+     inkscape:cy="573.00784"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:pagecheckerboard="false"
+     units="px"
+     inkscape:showpageshadow="false"
+     borderlayer="false"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-page="true"
+     inkscape:window-width="1868"
+     inkscape:window-height="1016"
+     inkscape:window-x="52"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -112,23 +134,32 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-1.7500001e-7,0.01856229)"
-     id="layer1"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     id="layer1"
+     transform="translate(-1.7500001e-7,1.6060623)">
     <path
-       inkscape:path-effect="#path-effect887"
+       id="rect10"
+       style="fill:#b380ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.257866"
+       d="M 1.7500001e-7,-0.04999219 H 507.99999 V 179.60209 H 1.7500001e-7 Z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:original-d="M 1.7500001e-7,-0.04999219 H 507.99999 V 179.60209 H 1.7500001e-7 Z"
        clip-path="url(#clipPath883)"
+       inkscape:path-effect="#path-effect887" />
+    <path
+       transform="translate(0,-1.5875)"
+       inkscape:path-effect="#path-effect19"
+       clip-path="url(#clipath_lpe_path-effect19)"
        inkscape:original-d="M 1.7500001e-7,-0.04999219 H 507.99999 V 179.60209 H 1.7500001e-7 Z"
        sodipodi:nodetypes="ccccc"
        d="M 1.7500001e-7,-0.04999219 H 507.99999 V 179.60209 H 1.7500001e-7 Z"
-       style="fill:url(#linearGradient897);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.257866"
-       id="rect10" />
+       style="fill:url(#linearGradient26);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.257866"
+       id="path17" />
   </g>
   <inkscape:templateinfo>
     <inkscape:name>web_design</inkscape:name>

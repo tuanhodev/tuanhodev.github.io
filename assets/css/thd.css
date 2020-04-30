@@ -5,9 +5,17 @@
   background-size: auto auto;
 }
 
-.avatar:hover, .avatar img:hover, .btn:hover, .card:hover, .card50100:hover, .title-transform:hover {
+.avatar:hover, .avatar img:hover, .btn:hover, .card:hover, .card50100:hover, .title-transform:hover, .bg-top-panner-left:hover {
   transition-duration: .5s !important;
   transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+}
+
+.bg-top-panner-left:hover {
+  transform: translateY(-25px) translateX(-15px) scale(1.03);
+  opacity: 35%;
+  /**
+  transform: scale(1.1);
+  **/
 }
 
 .avatar:hover {
