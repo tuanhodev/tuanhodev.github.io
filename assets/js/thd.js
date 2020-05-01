@@ -62,13 +62,22 @@ function headerModuleData() {
 function topHeaderData() {
   return {
     topHeader: `
-      <!-- background right on top header -->
+      <!-- background left right on top header -->
       <div 
-        class="bg-top-panner-left absolute top-0 right-0 w-128 h-128 mr-24 mt-20 opacity-25">
+        class="bg-top-panner-right absolute top-0 right-0 w-96 h-96 mr-6 lg:mr-16 lg:mt-20 opacity-25">
+        <img
+          class="w-full h-full"
+          src="assets/images/panner/top-panner-bg-right.svg" alt="">
+      </div>
+      <div 
+        class="bg-top-panner-left absolute bottom-0 left-0 w-72 h-72
+        lg:w-96 lg:h-96 ml-6 lg:ml-12 mt-20 opacity-25">
         <img
           class="w-full h-full"
           src="assets/images/panner/top-panner-bg-left.svg" alt="">
       </div>
+      <!-- end background left right on top header -->
+
       <!-- Brand left on top header -->
       <div class="absolute inset-y-auto inset-x-0 w-full">
         <div class="w-full flex justify-between py-4 px-6 lg:px-12">
@@ -98,12 +107,24 @@ function topHeaderData() {
         </div>
       </div>
 
-      <div class="w-full h-full text-themeOnPrimary text-lg flex flex-col justify-center">
-        <div class="w-1/2 lg:pl-32">
+      <!-- user portfolio -->
+      <div class="w-full h-full text-themeOnPrimary text-lg px-6 lg:pb-12 lg:px-12 
+        flex flex-col lg:flex-row items-center">
+
+        <div class="box-user w-full lg:w-2/5 flex justify-center lg:justify-end pr-6">
+          <div class="w-48 h-48">
+            <img
+              class="w-full h-full"
+              src="assets/images/panner/bg-avatar.svg">
+          </div>
+        </div>
+
+        <div class="relative w-full lg:pl-6 text-center lg:text-left">
           <h2 class="text-3xl tex-medium uppercase">Tôi là một nhà phát triển web</h2> 
           <p class="text-xl break-words">Full stack toàn thời gian</p>
           <p class="text-xl break-words">PHP JAVASCRIPT LARAVEL VUEJS BOOTSTRAP</p>
         </div>
+
       </div>
     `,
   }
