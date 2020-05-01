@@ -29,9 +29,9 @@
         class="space-x-8 flex justify-center cursor-default">
 
         <template x-for="item in brands">
-          <div x-text="item.key"
-            class="w-30 h-30 bg-purple-500 px-4 py-2 rounded-full
-            shadow-md flex items-center justify-center btn">
+          <div x-html="item.key"
+            class="w-12 h-12 bg-themeSecondary p-2 rounded-full
+            shadow-md flex items-center justify-center brand-logo">
           </div>
         </template>
 

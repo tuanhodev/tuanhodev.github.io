@@ -5,17 +5,19 @@
   background-size: auto auto;
 }
 
-.avatar:hover, .avatar img:hover, .btn:hover, .card:hover, .card50100:hover, .title-transform:hover, .bg-top-panner-left:hover {
+.brand-logo:hover, .avatar:hover, .avatar img:hover, .btn:hover, .card:hover, .card50100:hover, .title-transform:hover, .bg-top-panner-left:hover {
   transition-duration: .5s !important;
   transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+}
+
+.brand-logo:hover {
+  transform: rotate(395deg) scale(1.1);
+  background: #00998b;
 }
 
 .bg-top-panner-left:hover {
   transform: translateY(-25px) translateX(-15px) scale(1.03);
   opacity: 35%;
-  /**
-  transform: scale(1.1);
-  **/
 }
 
 .avatar:hover {
@@ -27,16 +29,16 @@
 }
 
 .btn:hover {
-  scale: 1.05;
+  transform: scale(1.05);
 }
 
 .card:hover {
-  scale: 1.05;
+  transform: scale(1.03);
   background-color: #6c15e8;
 }
 
 .card50100:hover {
-  scale: 1.02;
+  transform: scale(1.03);
   background-color: #6c15e8;
 }
 

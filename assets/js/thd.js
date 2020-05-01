@@ -2,9 +2,9 @@
 function social() {
   return {
     brands: [
-      { key: 'Youtube' },
-      { key: 'Facebook' },
-      { key: 'Zalo' },
+      { key: `<img class="w-8 h-8" src="assets/images/brands/twitter.svg">` },
+      { key: `<img class="w-8 h-8" src="assets/images/brands/github.svg">` },
+      { key: `<img class="w-8 h-8" src="assets/images/brands/discord.svg">` },
     ]
   }
 }
