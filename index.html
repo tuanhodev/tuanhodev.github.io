@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<div class="app">
+<div class="app cursor-default">
   <div class="w-full min-h-screen leading-normal">
 
     <!-- top header -->
@@ -24,7 +24,7 @@
     </header>
     <!-- end top header -->
 
-    <section class="px-16 lg:px-64 mb-6 lg:mb-24">
+    <section class="px-6 lg:px-64 mb-6 lg:mb-24">
       <div x-data="social()"
         class="space-x-8 flex justify-center cursor-default">
 
@@ -38,7 +38,7 @@
       </div>
     </section>
 
-    <section class="px-16 lg:px-64 mb-6 lg:mb-24">
+    <section class="px-6 lg:px-64 mb-6 lg:mb-24">
       <!-- header module 1 -->
       <div x-data="headerModuleData()"
         class="mb-8 px-30 w-full flex flex-wrap text-themeText text-lg text-center"
@@ -47,22 +47,18 @@
           class="w-full text-center text-3xl uppercase font-bold mb-2"
           >
         </h2>
-        <p x-html="headerModuleOne.description"
-          class="w-full text-center mb-6"
-          >
-        </p>
+        <p x-html="headerModuleOne.description" class="w-full text-center mb-6"></p>
       </div>
 
       <!-- module.card 1 -->
       <div x-data="cardsData()" 
-        class="grid grid-cols-3 gap-8 text-center"
+        class="w-full space-y-6 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8 text-center"
         >
         <template x-for="(card, index) in cards" :key="index"
-          class="space-y-4 justify-center"
           >
           <div x-text="card.key"
             :class="card.class"
-            class="card span-col-1 h-56 bg-indigo-300 p-6 rounded-lg 
+            class="card w-full lg:col-span-1 h-56 bg-indigo-300 p-6 rounded-lg 
             shadow-lg flex items-center justify-center"
             >
           </div>
@@ -71,7 +67,7 @@
 
     </section>
 
-    <section class="px-16 lg:px-64 mb-6 lg:mb-48">
+    <section class="px-6 lg:px-64 mb-12 lg:mb-48">
       <!-- header module 2 -->
       <div x-data="headerModuleData()"
         class="lg:mb-8 px-30 w-full flex flex-wrap text-themeText text-lg text-center">
@@ -85,14 +81,14 @@
       </div>
       <!-- module.card 50100 -->
       <div x-data="cardsData50100()" 
-        class="grid grid-cols-2 gap-8 text-center"
+        class="w-full space-y-6 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-8 text-center"
         >
         <template x-for="(card, index) in cards" :key="index"
           class="space-y-4 justify-center"
           >
           <div x-text="card.key"
             :class="card.class"
-            class="card50100 span-col-1 h-48 bg-indigo-300 p-6 rounded-lg 
+            class="card50100 w-full lg:col-span-1 h-48 bg-indigo-300 p-6 rounded-lg 
             shadow-lg flex items-center justify-center"
             >
           </div>
@@ -102,12 +98,53 @@
     </section>
 
     <!-- footer -->
-    <section class="w-full">
-      <div class="footer grid grid-cols-2 gap-4 py-8">
-        <div class="span-col-1 h-48">Left</div>
-        <div class="span-col-1 h-48">Right</div>
+    <section class="footer px-6 lg:px-64 py-6 lg:py-16 cursor-default">
+      <div class="lg:grid lg:grid-cols-6 lg:gap-8 py-8">
+        <div class="lg:text-right w-full lg:col-span-4 p-4">
+          <div  class="text-lg text-themeOnPrimary w-full leading-normal">
+            <p>
+              <h3 class="text-medium text-3xl">Chém gió về bản thân</h3>
+              Theo lời mấy đứa bạn thì tôi là một gã khùng.
+              Đang yên đang lành, đi làm Graphic Designer được 6 năm.
+              Tự dưng đi đổi nghề chuyển sang học lập trình.
+              Chúng cũng khuyên nhiều lắm, nhưng được cái tạo hóa ban cho đức tính lỳ lợm,
+              đã quyết rồi thì không ai cản bước được.
+              Cặm cụi dùi mài kinh sử và cũng mài bay 2 năm cuộc đời.
+              Có lúc tính bỏ cuộc, nhưng thực sự mình đã yêu mất cái thú Code từ khi nào không hay,
+              tự vấn lương tâm chắc là kiếp trước có nợ gì nên kiếp này phải đi học cái nghề cực gì đâu. 
+              Hơn ba năm rồi kể từ thời khắc định mệnh ấy, chưa đủ dài nhưng cũng đủ để thấm thía.
+              Nghề lập trình không khó, còn rất nhiều cơ hội ở phía trước,
+              Nhưng chắc chắn một điều, Lập trình không dành cho người thiếu kiên trì các bác nhẩy...
+            <p>
+          </div>
+        </div>
+        <div class="w-full lg:col-span-2 h-full bg-themeSecondary py-4 px-6 rounded-lg">
+          <div  class="text-lg text-themeOnPrimary w-full leading-normal">
+            <h3 class="text-medium text-3xl">Lên hệ với Tôi</h3>
+            <div class="flex items-center mb-1">
+              <span class="material-icons text-md mr-2">map</span>
+              Chung cư B Gò Dầu
+            </div>
+            Đường Tân Sơn Nhì, P.Tân Sơn Nhì
+            <br/>
+            Q.Tân Phú, Thành Phố Hồ Chí Minh.
+            <div class="flex items-center mb-1">
+              <span class="material-icons text-md mr-2">email</span>
+              Email: tuan.ho.designer@gmail.com
+            </div>
+            <div class="flex items-center">
+              <span class="material-icons text-md mr-2">phone</span>
+              Phone: 0925 664 424
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- end footer -->
+
+    <div class="w-full bg-gray-300 text-gray-700 px-16 py-2 text-sm text-gray-300">
+      <p>&copy; Copyright Thd Design && Code Tuan Ho Dev</p>
+    </div>
 
   </div>
 </div>

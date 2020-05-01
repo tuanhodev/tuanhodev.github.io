@@ -64,17 +64,13 @@ function topHeaderData() {
     topHeader: `
       <!-- background left right on top header -->
       <div 
-        class="bg-top-panner-right absolute top-0 right-0 w-96 h-96 mr-6 lg:mr-16 lg:mt-20 opacity-25">
-        <img
-          class="w-full h-full"
-          src="assets/images/panner/top-panner-bg-right.svg" alt="">
+        class="bg-top-panner-right absolute top-0 right-0 w-56 h-56 mr-6 lg:w-96 lg:h-96 lg:mr-16 mt-10 lg:mt-32 opacity-25">
+        <img class="w-full h-full" src="assets/images/panner/top-panner-bg-right.svg" alt="">
       </div>
       <div 
         class="bg-top-panner-left absolute bottom-0 left-0 w-72 h-72
         lg:w-96 lg:h-96 ml-6 lg:ml-12 mt-20 opacity-25">
-        <img
-          class="w-full h-full"
-          src="assets/images/panner/top-panner-bg-left.svg" alt="">
+        <img class="w-full h-full" src="assets/images/panner/top-panner-bg-left.svg" alt="">
       </div>
       <!-- end background left right on top header -->
 
@@ -88,12 +84,13 @@ function topHeaderData() {
             <div class="avatar w-10 h-10 object-cover mr-3">
               <img class="w-full h-full rounded-full" src="assets/images/avatar.svg" />
             </div>
-            <p class="title-transform cursor-default">AnhTuan Dev</p>
+            <p class="hidden lg:flex title-transform cursor-default">Tuấn Hồ Dev</p>
+            <p class="lg:hidden title-transform cursor-default">THD</p>
           </div>
           
           <nav class="w-full space-x-3 flex justify-end">
             <a href="/" 
-              class="btn flex px-4 py-1 items-center rounded-full text-lg
+              class="hidden lg:flex btn flex px-4 py-1 items-center rounded-full text-lg
               font-medium text-themeOnPrimary hover:bg-themeHoverSecondary"
               ><img class="w-4 h-4 mr-1" src="assets/icons/dark/home.svg">Home
             </a>
@@ -109,23 +106,35 @@ function topHeaderData() {
 
       <!-- user portfolio -->
       <div class="w-full h-full text-themeOnPrimary text-lg px-6 lg:pb-12 lg:px-12 
-        flex flex-col lg:flex-row items-center">
+        flex flex-col lg:flex-row justify-center items-center">
 
-        <div class="box-user w-full lg:w-2/5 flex justify-center lg:justify-end pr-6">
-          <div class="w-48 h-48">
-            <img
-              class="w-full h-full"
-              src="assets/images/panner/bg-avatar.svg">
+        <div class="mb-6 box-user w-full lg:w-2/5 flex justify-center lg:justify-end pr-6">
+          <div class="w-48 h-48 lg:w-64 lg:h-64 relative">
+            <img class="w-full h-full" src="assets/images/panner/bg-avatar.svg">
+          </div>
+          <div class="avatar-user rounded-full shadow-md w-24 h-24 lg:w-32 lg:h-32 absolute inset-y-auto inset-x-auto m-12 lg:m-16">
+              <img class="w-full h-full rounded-full" src="assets/images/avatar.svg" />
           </div>
         </div>
 
-        <div class="relative w-full lg:pl-6 text-center lg:text-left">
-          <h2 class="text-3xl tex-medium uppercase">Tôi là một nhà phát triển web</h2> 
-          <p class="text-xl break-words">Full stack toàn thời gian</p>
-          <p class="text-xl break-words">PHP JAVASCRIPT LARAVEL VUEJS BOOTSTRAP</p>
+        <div class="z-50 w-full lg:pl-6 text-center lg:text-left">
+          <p class="text-xl break-words">Tôi là một nhà phát triển web</p>
+          <h2 class="text-4xl tex-bold uppercase">Php Full stack</h2> 
+          <p class="text-xl break-words">Text editor yêu thích của tôi là Vim</p>
+          <p class="text-xl break-words">Tôi đang thấy thoải mái cùng</p>
+          <p class="text-xl break-words uppercase">PHP &rarr; Laravel  
+          <br/>
+          JAVASCRIPT &rarr; Vuejs &rarr; Tailwindcss</p>
+
+          <div class="btn bg-themeSecondary text-center text-themeOnPrimary font-medium
+            px-4 py-1 w-1/4 mt-8 lg:mx-0 mx-auto rounded-full">
+            Gọi Cho Tôi
+          </div>
+
         </div>
 
       </div>
+
     `,
   }
 }

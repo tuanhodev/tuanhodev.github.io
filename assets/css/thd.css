@@ -6,9 +6,13 @@
 }
 
 .brand-logo:hover, .avatar:hover, .avatar img:hover, .btn:hover, .card:hover, .card50100:hover, 
-.title-transform:hover, .bg-top-panner-left:hover, .bg-top-panner-right:hover {
+.avatar-user:hover, .title-transform:hover, .bg-top-panner-left:hover, .bg-top-panner-right:hover {
   transition-duration: .5s !important;
   transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+}
+
+.avatar-user:hover {
+  transform: scale(1.1);
 }
 
 .brand-logo:hover {
