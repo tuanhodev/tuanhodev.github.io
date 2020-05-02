@@ -12,15 +12,51 @@ function social() {
 function cardsData() {
   return {
     cards: [
-      { key: 'Php', class: 'is-php', },
-      { key: 'Javascript', class: 'is-javascript', },
-      { key: 'Vim', class: 'is-vim', },
-      { key: 'Laravel', class: 'is-laravel', },
-      { key: 'Vuejs', class: 'is-vuejs', },
-      { key: 'Alpinejs', class: 'is-alpinejs', },
-      { key: 'Bootstrap', class: 'is-bootstrap', },
-      { key: 'Tailwindcss', class: 'is-tailwindcss', },
-      { key: 'Gimp', class: 'is-gimp', },
+      { key: 'Php', class: 'is-php',
+        logo: `
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+        `
+      },
+      { key: 'Javascript', class: 'is-javascript', 
+        logo: `
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+        `
+      },
+      { key: 'Vim', class: 'is-vim', 
+        logo: `
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+        `
+      },
+      { key: 'Vuejs', class: 'is-vuejs', 
+        logo: `
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+        `
+      },
+      { key: 'Laravel', class: 'is-laravel',
+        logo: `
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+        `
+      },
+      { key: 'Alpinejs', class: 'is-alpinejs', 
+        logo: `
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+        `
+      },
+      { key: 'Bootstrap', class: 'is-bootstrap', 
+        logo: `
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+        `
+      },
+      { key: 'Tailwindcss', class: 'is-tailwindcss',
+        logo: `
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logotailwindcss.svg">
+        `
+      },
+      { key: 'Gimp', class: 'is-gimp', 
+        logo: `
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+        `
+      },
     ]
   }
 }

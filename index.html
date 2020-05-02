@@ -56,11 +56,11 @@
         >
         <template x-for="(card, index) in cards" :key="index"
           >
-          <div x-text="card.key"
+          <div
             :class="card.class"
-            class="card w-full lg:col-span-1 h-56 bg-indigo-300 p-6 rounded-lg 
-            shadow-lg flex items-center justify-center"
-            >
+            class="overflow-hidden w-full lg:col-span-1 h-56 bg-indigo-300 p-6 rounded-lg
+            shadow-lg flex items-center justify-center">
+            <div class="w-full h-full" x-html="card.logo"></div>
           </div>
         </template>
       </div>
@@ -102,8 +102,8 @@
       <div class="lg:grid lg:grid-cols-6 lg:gap-8 py-8">
         <div class="lg:text-right w-full lg:col-span-4 p-4">
           <div  class="text-lg text-themeOnPrimary w-full leading-normal">
+            <h3 class="text-medium text-3xl">Chém gió về bản thân</h3>
             <p>
-              <h3 class="text-medium text-3xl">Chém gió về bản thân</h3>
               Theo lời mấy đứa bạn thì tôi là một gã khùng.
               Đang yên đang lành, đi làm Graphic Designer được 6 năm.
               Tự dưng đi đổi nghề chuyển sang học lập trình.
@@ -121,18 +121,18 @@
         <div class="w-full lg:col-span-2 h-full bg-themeSecondary py-4 px-6 rounded-lg">
           <div  class="text-lg text-themeOnPrimary w-full leading-normal">
             <h3 class="text-medium text-3xl">Lên hệ với Tôi</h3>
-            <div class="flex items-center mb-1">
+            <div class="flex flex-wrap items-center mb-1 break-words">
               <span class="material-icons text-md mr-2">map</span>
               Chung cư B Gò Dầu
             </div>
             Đường Tân Sơn Nhì, P.Tân Sơn Nhì
             <br/>
             Q.Tân Phú, Thành Phố Hồ Chí Minh.
-            <div class="flex items-center mb-1">
+            <div class="flex flex-wrap items-center mb-1 break-words">
               <span class="material-icons text-md mr-2">email</span>
               Email: tuan.ho.designer@gmail.com
             </div>
-            <div class="flex items-center">
+            <div class="flex flex-wrap items-center mb-1 break-words">
               <span class="material-icons text-md mr-2">phone</span>
               Phone: 0925 664 424
             </div>
@@ -142,8 +142,8 @@
     </section>
     <!-- end footer -->
 
-    <div class="w-full bg-gray-300 text-gray-700 px-16 py-2 text-sm text-gray-300">
-      <p>&copy; Copyright Thd Design && Code Tuan Ho Dev</p>
+    <div class="w-full bg-gray-300 text-gray-700 px-6 lg:px-16 py-2 text-sm text-gray-300">
+      <p>&copy; Copyright Thd Design && Dev</p>
     </div>
 
   </div>

@@ -6,9 +6,14 @@
 }
 
 .brand-logo:hover, .avatar:hover, .avatar img:hover, .btn:hover, .card:hover, .card50100:hover, 
-.avatar-user:hover, .title-transform:hover, .bg-top-panner-left:hover, .bg-top-panner-right:hover {
+.avatar-user:hover, .title-transform:hover, .bg-top-panner-left:hover, .bg-top-panner-right:hover,
+.image-in-card:hover {
   transition-duration: .5s !important;
   transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+}
+
+.image-in-card:hover {
+  transform: scale(1.9);
 }
 
 .avatar-user:hover {
