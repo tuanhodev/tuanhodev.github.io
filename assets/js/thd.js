@@ -52,11 +52,13 @@ function cardsData() {
           <img class="w-full h-full image-in-card" src="assets/images/brands/logotailwindcss.svg">
         `
       },
+      /**
       { key: 'Gimp', class: 'is-gimp', 
         logo: `
           <img class="w-full h-full image-in-card" src="assets/images/brands/logogimp.svg">
         `
       },
+      **/
     ]
   }
 }
@@ -64,10 +66,35 @@ function cardsData() {
 function cardsData50100() {
   return {
     cards: [
-      { key: 'Php', class: 'post-list', },
-      { key: 'Javascript', class: 'post-list', },
-      { key: 'Vim', class: 'post-list', },
-      { key: 'Laravel', class: 'post-list', },
+      { key: 'Vim', class: 'bg-teal-500', title: 'Vim là gì ?',
+        logo: `
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logovim.png">
+        `,
+        text: `
+          Vim là một bản sao, với một số bổ sung, của trình soạn thảo vi của Bill Joy cho Unix. i
+          Nó được viết bởi Bram Moolenaar dựa trên mã nguồn của một port 
+          của Stevie editor lên Amiga và phát hành lần đầu vào năm 1991...
+        `
+      },
+      { key: 'Laravel', class: 'bg-orange-300', title: 'Laravel là gì ?',
+        logo: `
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+        `,
+        text: `
+          Được dịch từ tiếng Anh-Laravel là một khung web PHP mã nguồn mở, miễn phí, được tạo bởi Taylor Otwell
+          và dành cho việc phát triển các ứng dụng web theo mô hình kiến trúc của bộ điều khiển xem view mô hình và dựa trên Symfony...
+        `
+      },
+      { key: 'Laravel', class: 'bg-indigo-300', title: 'So sánh một ứng dụng đơn giản trong Vue.js và Alpine.js',
+        logo: `
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logoalpinejs.svg">
+        `,
+        text: `
+          Vue.js là một trong những khung Javascript phổ biến nhất trên thế giới hiện tại, 
+          được phát hành lần đầu vào năm 2014 và với phiên bản 3. 
+          Alpine hoàn toàn không cần xây dựng(buld)...
+        `
+      },
     ]
   }
 }

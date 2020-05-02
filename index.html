@@ -38,7 +38,7 @@
       </div>
     </section>
 
-    <section class="px-6 lg:px-64 mb-6 lg:mb-24">
+    <section class="px-6 lg:px-64 mb-16 lg:mb-24">
       <!-- header module 1 -->
       <div x-data="headerModuleData()"
         class="mb-8 px-30 w-full flex flex-wrap text-themeText text-lg text-center"
@@ -52,13 +52,13 @@
 
       <!-- module.card 1 -->
       <div x-data="cardsData()" 
-        class="w-full space-y-6 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8 text-center"
+        class="grid grid-cols-4 gap-4 lg:gap-8 text-center"
         >
         <template x-for="(card, index) in cards" :key="index"
           >
           <div
             :class="card.class"
-            class="overflow-hidden col-span-1 lg:col-span-1 bg-gray-200 p-6 rounded-lg
+            class="overflow-hidden col-span-2 lg:col-span-1 bg-gray-200 p-6 rounded-lg
             shadow-lg flex items-center justify-center">
             <div class="w-full h-full" x-html="card.logo"></div>
           </div>
@@ -80,17 +80,23 @@
           </p>
       </div>
       <!-- module.card 50100 -->
-      <div x-data="cardsData50100()" 
-        class="w-full space-y-6 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-8 text-center"
-        >
-        <template x-for="(card, index) in cards" :key="index"
-          class="space-y-4 justify-center"
-          >
-          <div x-text="card.key"
-            :class="card.class"
-            class="card50100 w-full lg:col-span-1 h-48 bg-indigo-300 p-6 rounded-lg 
-            shadow-lg flex items-center justify-center"
-            >
+      <div x-data="cardsData50100()">
+        <template x-for="(card, index) in cards" :key="index">
+          <div class="grid grid-cols-5 gap-8 rounded-lg shadow-md mb-8 bg-gray-300">
+
+            <div :class="card.class" class="col-span-2 lg:col-span-1 p-6 lg:p-12 overflow-hidden" x-html="card.logo">
+              <div class="w-full h-full"></div>
+            </div>
+
+            <div class="h-64 col-span-3 lg:col-span-4 p-6">
+              <div x-text="card.title"
+                class="mb-6 text-3xl text-left uppercase leading-none font-bold">
+              </div>
+              <div x-html="card.text"
+                class="overflow-hidden mb-6 text-lg text-left leading-normal break-words">
+              </div>
+            </div>
+
           </div>
         </template>
       </div>
