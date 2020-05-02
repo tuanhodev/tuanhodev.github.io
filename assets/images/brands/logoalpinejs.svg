@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 200 200" height="200" width="200" id="svg2" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs id="defs6">
+    <filter id="filter388" style="color-interpolation-filters:sRGB;">
+      <feFlood id="feFlood378" result="flood" flood-color="rgb(0,0,0)" flood-opacity="0.501961"/>
+      <feComposite id="feComposite380" result="composite1" operator="in" in2="SourceGraphic" in="flood"/>
+      <feGaussianBlur id="feGaussianBlur382" result="blur" stdDeviation="1" in="composite1"/>
+      <feOffset id="feOffset384" result="offset" dy="1" dx="1"/>
+      <feComposite id="feComposite386" result="composite2" operator="over" in2="offset" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="g8" transform="matrix(1.259656, 0, 0, 1.259656, -25.965633, -26.006924)" style="">
+    <g style="filter:url(#filter388)" id="g48">
+      <g id="g268">
+        <path style="fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;" d="M 177.19827,82.149449 138.78866,44.10553 61.788537,121.24554 h 76.422933 z" id="path14"/>
+        <path id="path12" d="M 22.801734,82.149449 61.211344,44.10553 138.21147,121.24554 H 61.788537 Z" style="fill:#8ac0cf;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"/>
+      </g>
+    </g>
+    <text id="text18" y="150.94156" x="51.313969" style="font-style: normal; font-weight: normal; font-size: 23.8112px; line-height: 1.25; font-family: sans-serif; fill: rgb(51, 51, 51); fill-opacity: 1; stroke: none; stroke-width: 0.595281; white-space: pre;"><tspan style="fill:#333333;fill-opacity:1;stroke-width:0.595281;" y="150.94156" x="51.313969" id="tspan16">Alpinejs</tspan></text>
+  </g>
+</svg>

@@ -14,22 +14,22 @@ function cardsData() {
     cards: [
       { key: 'Php', class: 'is-php',
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logophp.svg">
         `
       },
       { key: 'Javascript', class: 'is-javascript', 
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logojavascript.svg">
         `
       },
       { key: 'Vim', class: 'is-vim', 
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logovim.png">
         `
       },
       { key: 'Vuejs', class: 'is-vuejs', 
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logovuejs.png">
         `
       },
       { key: 'Laravel', class: 'is-laravel',
@@ -39,12 +39,12 @@ function cardsData() {
       },
       { key: 'Alpinejs', class: 'is-alpinejs', 
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logoalpinejs.svg">
         `
       },
       { key: 'Bootstrap', class: 'is-bootstrap', 
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logobootstrap.svg">
         `
       },
       { key: 'Tailwindcss', class: 'is-tailwindcss',
@@ -54,7 +54,7 @@ function cardsData() {
       },
       { key: 'Gimp', class: 'is-gimp', 
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+          <img class="w-full h-full image-in-card" src="assets/images/brands/logogimp.svg">
         `
       },
     ]
