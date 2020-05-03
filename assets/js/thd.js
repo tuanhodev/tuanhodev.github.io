@@ -69,7 +69,7 @@ function cardsData50100() {
       { key: 'Vim', class: 'bg-teal-500', title: 'Vim là gì ?',
         logo: 'assets/images/brands/logovim.png',
         text: `
-          Vim là một bản sao, với một số bổ sung, của trình soạn thảo vi của Bill Joy cho Unix. i
+          Vim là một bản sao, với một số bổ sung, của trình soạn thảo vi của Bill Joy cho Unix.
           Nó được viết bởi Bram Moolenaar dựa trên mã nguồn của một port 
           của Stevie editor lên Amiga và phát hành lần đầu vào năm 1991...
         `
@@ -178,7 +178,10 @@ function topHeaderData() {
           </div>
         </div>
 
-        <div class="z-50 w-full lg:pl-6 text-center lg:text-left">
+        <div
+          x-data="modalUserData()"
+          @keydown.escape="modalUser()"
+          class="z-50 w-full lg:pl-6 text-center lg:text-left">
           <p class="text-xl break-words">Tôi là một nhà phát triển web</p>
           <h2 class="text-4xl tex-bold uppercase">Php Full stack</h2> 
           <p class="text-xl break-words">Text editor yêu thích của tôi là Vim</p>
@@ -187,16 +190,63 @@ function topHeaderData() {
           <br/>
           JAVASCRIPT &rarr; Vuejs &rarr; Tailwindcss</p>
 
-          <div class="btn bg-themeSecondary text-center text-themeOnPrimary font-medium
+          <div 
+            @click="modalUser()"
+            class="btn bg-themeSecondary text-center text-themeOnPrimary font-medium
             px-4 py-1 w-1/4 mt-8 lg:mx-0 mx-auto rounded-full">
             Gọi Cho Tôi
           </div>
+
+          <template x-if="isModal"
+            @click.away="isModal = false">
+            <div 
+              class="overflow-hidden bg-white fixed inset-y-0 inset-x-0 w-full h-full flex justify-center lg:p-12">
+              <div @click="isModal = false" class="absolute inset-x-0 inset-y-0 w-full h-full bg-black-25"></div>
+
+              <div class="z-50 bg-gray-300 w-full lg:w-1/2 rounded-lg shadow-md p-4">
+
+                <div class="w-full flex justify-center items-center">
+                  <img class="w-64 h-64 rounded-full" src="assets/images/avatar.png" />
+                </div>
+                <div  class="text-lg text-themeOnPrimary w-full leading-normal">
+                  <h3 class="text-medium text-3xl">Lên hệ với Tôi</h3>
+                  <div class="flex flex-wrap items-center mb-1 break-words">
+                    <span class="material-icons text-md mr-2">map</span>
+                    Chung cư B Gò Dầu
+                  </div>
+                  Đường Tân Sơn Nhì, P.Tân Sơn Nhì
+                  <br/>
+                  Q.Tân Phú, Thành Phố Hồ Chí Minh.
+                  <div class="flex flex-wrap items-center mb-1 break-words">
+                    <span class="material-icons text-md mr-2">email</span>
+                    Email: tuan.ho.designer@gmail.com
+                  </div>
+                  <div class="flex flex-wrap items-center mb-1 break-words">
+                    <span class="material-icons text-md mr-2">phone</span>
+                    Phone: 0925 664 424
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </template>
 
         </div>
 
       </div>
 
     `,
+  }
+
+}
+
+function modalUserData() {
+  return {
+    isModal: false,
+    modalUser() {
+      this.isModal = !this.isModal;
+      console.log('vua click', this.isModal);
+    }
   }
 }
 
