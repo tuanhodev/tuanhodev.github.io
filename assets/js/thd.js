@@ -200,31 +200,36 @@ function topHeaderData() {
           <template x-if="isModal"
             @click.away="isModal = false">
             <div 
-              class="overflow-hidden bg-white fixed inset-y-0 inset-x-0 w-full h-full flex justify-center lg:p-12">
+              x-transition:enter="modal-enter"
+              x-transition:enter-start="modal-enter-start"
+              x-transition:enter-end="modal-enter-end"
+              x-transition:leave="modal-leave"
+              x-transition:leave-start="modal-leave-start"
+              x-transition:leave-end="modal-leave-end"
+              class="overflow-hidden bg-white fixed inset-y-0 inset-x-0 w-full h-screen flex justify-center lg:p-12 modal">
               <div @click="isModal = false" class="absolute inset-x-0 inset-y-0 w-full h-full bg-black-25"></div>
 
-              <div class="z-50 bg-gray-300 w-full lg:w-1/2 rounded-lg shadow-md p-4">
-
-                <div class="w-full flex justify-center items-center">
-                  <img class="w-64 h-64 rounded-full" src="assets/images/avatar.png" />
+              <div class="z-50 bg-gray-300 w-full lg:w-1/3 shadow-md">
+                <!-- avatar modal -->
+                <div class="w-full flex justify-center items-center mb-6 lg:mb-12 bg-themePrimary p-6 lg:p-12 shadow-md">
+                  <img class="w-64 h-64 rounded-full p-1 bg-white" src="assets/images/avatar.png" />
                 </div>
-                <div  class="text-lg text-themeOnPrimary w-full leading-normal">
+                <!-- body modal -->
+                <div  class="text-xl mb-8 lg:mb-16 text-themeOnSecondary w-full leading-normal text-center">
                   <h3 class="text-medium text-3xl">Lên hệ với Tôi</h3>
-                  <div class="flex flex-wrap items-center mb-1 break-words">
-                    <span class="material-icons text-md mr-2">map</span>
-                    Chung cư B Gò Dầu
-                  </div>
+                  Chung cư B Gò Dầu
+                  <br/>
                   Đường Tân Sơn Nhì, P.Tân Sơn Nhì
                   <br/>
                   Q.Tân Phú, Thành Phố Hồ Chí Minh.
-                  <div class="flex flex-wrap items-center mb-1 break-words">
-                    <span class="material-icons text-md mr-2">email</span>
-                    Email: tuan.ho.designer@gmail.com
-                  </div>
-                  <div class="flex flex-wrap items-center mb-1 break-words">
-                    <span class="material-icons text-md mr-2">phone</span>
-                    Phone: 0925 664 424
-                  </div>
+                  <br/>
+                  Email: tuan.ho.designer@gmail.com
+                  <br/>
+                  Phone: 0925 664 424
+                </div>
+                <!-- footer modal -->
+                <div class="w-full px-6 flex justify-center">
+                  <div @click="isModal = false" class="px-4 py-1 rounded-full bg-themeSecondary text-OnSecondary">close</div>
                 </div>
 
               </div>

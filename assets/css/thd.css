@@ -12,7 +12,36 @@
   transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
 }
 
+/** modal **/
+/* suot qua trinh them phan tu va go phan tu */
+.modal-enter {
+  transition-duration: .5s !important;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+}
+/* hoan phan tu dc them vao, ket thuc transition */
+.modal-enter-start {
+  transform: scale(0.5);
+  opacity: 40%;
+}
+/* trang thai khi hien thi va truoc luc xoa phan tu */
+.modal-enter-end, .modal-leave-start {
+  opacity: 100;
+  transform: scale(1);
+}
+/* suot qua trinh go phan tu */
+.modal-leave {
+  transition-duration: .2s !important;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+}
+/* phan tu bi go khoi dom */
+.modal-leave-end {
+  transform: scale(0.3);
+  opacity: 20%;
+}
+
+
 .image-in-card:hover {
+  transition-duration: 5s !important;
   transform: scale(1.3);
 }
 
@@ -64,6 +93,4 @@
 .footer {
   background: linear-gradient(45deg, #3800b5 10%, #7d11ff);
 }
-
-
 
