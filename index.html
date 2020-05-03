@@ -82,13 +82,15 @@
       <!-- module.card 50100 -->
       <div x-data="cardsData50100()">
         <template x-for="(card, index) in cards" :key="index">
-          <div class="grid grid-cols-5 gap-8 rounded-lg shadow-md mb-8 bg-gray-300">
+          <div class="w-full lg:flex rounded-lg shadow-md mb-8 bg-gray-300">
 
-            <div :class="card.class" class="col-span-2 lg:col-span-1 p-6 lg:p-12 overflow-hidden" x-html="card.logo">
-              <div class="w-full h-full"></div>
+            <div
+              :class="card.class" 
+              class="items-cover flex items-center w-full lg:w-1/4 p-4 lg:p-12 overflow-hidden">
+              <img class="w-full image-in-card" :src="card.logo">
             </div>
 
-            <div class="h-64 col-span-3 lg:col-span-4 p-6">
+            <div class="p-6 w-full lg:w-3/4">
               <div x-text="card.title"
                 class="mb-6 text-3xl text-left uppercase leading-none font-bold">
               </div>

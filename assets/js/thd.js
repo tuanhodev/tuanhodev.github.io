@@ -67,9 +67,7 @@ function cardsData50100() {
   return {
     cards: [
       { key: 'Vim', class: 'bg-teal-500', title: 'Vim là gì ?',
-        logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logovim.png">
-        `,
+        logo: 'assets/images/brands/logovim.png',
         text: `
           Vim là một bản sao, với một số bổ sung, của trình soạn thảo vi của Bill Joy cho Unix. i
           Nó được viết bởi Bram Moolenaar dựa trên mã nguồn của một port 
@@ -77,18 +75,14 @@ function cardsData50100() {
         `
       },
       { key: 'Laravel', class: 'bg-orange-300', title: 'Laravel là gì ?',
-        logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
-        `,
+        logo:'assets/images/brands/logolaravel.svg',
         text: `
           Được dịch từ tiếng Anh-Laravel là một khung web PHP mã nguồn mở, miễn phí, được tạo bởi Taylor Otwell
           và dành cho việc phát triển các ứng dụng web theo mô hình kiến trúc của bộ điều khiển xem view mô hình và dựa trên Symfony...
         `
       },
       { key: 'Laravel', class: 'bg-indigo-300', title: 'So sánh một ứng dụng đơn giản trong Vue.js và Alpine.js',
-        logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logoalpinejs.svg">
-        `,
+        logo: 'assets/images/brands/logoalpinejs.svg',
         text: `
           Vue.js là một trong những khung Javascript phổ biến nhất trên thế giới hiện tại, 
           được phát hành lần đầu vào năm 2014 và với phiên bản 3. 
@@ -145,7 +139,7 @@ function topHeaderData() {
             text-themeOnPrimary uppercase font-bold text-lg"
             >
             <div class="avatar w-10 h-10 object-cover mr-3">
-              <img class="w-full h-full rounded-full" src="assets/images/avatar.svg" />
+              <img class="w-full h-full rounded-full" src="assets/images/avatar.png" />
             </div>
             <p class="hidden lg:flex title-transform cursor-default">Tuấn Hồ Dev</p>
             <p class="lg:hidden title-transform cursor-default">THD</p>
@@ -172,11 +166,15 @@ function topHeaderData() {
         flex flex-col lg:flex-row justify-center items-center">
 
         <div class="mb-6 box-user w-full lg:w-2/5 flex justify-center lg:justify-end pr-6">
-          <div class="w-48 h-48 lg:w-64 lg:h-64 relative">
-            <img class="w-full h-full" src="assets/images/panner/bg-avatar.svg">
-          </div>
-          <div class="avatar-user rounded-full shadow-md w-24 h-24 lg:w-32 lg:h-32 absolute inset-y-auto inset-x-auto m-12 lg:m-16">
-              <img class="w-full h-full rounded-full" src="assets/images/avatar.svg" />
+          <div class="w-48 h-48 lg:w-64 lg:h-64 flex justify-center items-center p-8 lg:p-16 z-50"
+            style="
+              background: url(assets/images/panner/bg-avatar.svg);
+              background-size: contain;
+              background-repeat: no-repeat;
+            ">
+            <div class="avatar-user rounded-full shadow-md bg-white hover:bg-themePrimary p-1"
+              ><img class="w-full h-full rounded-full" src="assets/images/avatar.png" />
+            </div>
           </div>
         </div>
 
