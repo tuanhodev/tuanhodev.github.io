@@ -41,7 +41,6 @@
 
 
 .image-in-card:hover {
-  transition-duration: 5s !important;
   transform: scale(1.3);
 }
 
