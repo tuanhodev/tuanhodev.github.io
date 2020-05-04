@@ -77,7 +77,7 @@ function cardsData50100() {
       { key: 'Laravel', class: 'bg-orange-300', title: 'Laravel là gì ?',
         logo:'assets/images/brands/logolaravel.svg',
         text: `
-          Anh-Laravel là một khung web PHP mã nguồn mở, miễn phí, được tạo bởi Taylor Otwell
+          Laravel là một khung web PHP mã nguồn mở, miễn phí, được tạo bởi Taylor Otwell
           và dành cho việc phát triển các ứng dụng web theo mô hình kiến trúc của bộ điều khiển xem view mô hình và dựa trên Symfony...
         `
       },
