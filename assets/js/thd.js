@@ -77,7 +77,7 @@ function cardsData50100() {
       { key: 'Laravel', class: 'bg-orange-300', title: 'Laravel là gì ?',
         logo:'assets/images/brands/logolaravel.svg',
         text: `
-          Được dịch từ tiếng Anh-Laravel là một khung web PHP mã nguồn mở, miễn phí, được tạo bởi Taylor Otwell
+          Anh-Laravel là một khung web PHP mã nguồn mở, miễn phí, được tạo bởi Taylor Otwell
           và dành cho việc phát triển các ứng dụng web theo mô hình kiến trúc của bộ điều khiển xem view mô hình và dựa trên Symfony...
         `
       },
@@ -193,7 +193,7 @@ function topHeaderData() {
           <div 
             @click="modalUser()"
             class="btn bg-themeSecondary text-center text-themeOnPrimary font-medium
-            px-4 py-1 w-1/4 mt-8 lg:mx-0 mx-auto rounded-full">
+            px-4 py-1 w-1/4 mt-8 lg:mx-0 mx-auto rounded-full flex items-center justify-center">
             <p class="hidden lg:flex"> Gọi Cho Tôi </p>
             <span class="material-icons text-md lg:hidden">call</span>
           </div>
