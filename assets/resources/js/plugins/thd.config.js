@@ -1,0 +1,55 @@
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        themeNavbar: '#48BB78',
+        themeButton: '#2F855A',
+
+        themeText: '4A5568',
+        themePrimary: '#6200ee',
+        themeHoverPrimary: '#6c15e8',
+        themeOnPrimary: '#ffffff',
+        themeSecondary: '#03dac6',
+        themeHoverSecondary: '#00A293',
+        themeOnSecondary: '#000000',
+        themeError: '#b00020',
+        themeOnError: '#ffffff',
+        themeSurface: '#ffffff',
+        themeOnSurface: '#000000',
+        themeBackground: '#ffffff',
+      },
+      spacing: {
+        //custom
+        '72': '18rem',
+        '96': '24rem',
+        '128': '32rem',
+        '160': '40rem',
+      },
+      sans: [
+        '"Segoe UI"',
+        'Quicksand',
+        'Nunito',
+        '"Helvetica Neue"',
+        'Ubuntu',
+        'Arial',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"',
+      ],
+    },
+  },
+  variants: {
+    borderWidth: ['responsive', 'hover', 'focus'],
+    fontSize: ['responsive', 'hover', 'focus'],
+    fontSmoothing: ['responsive', 'hover', 'focus'],
+    fontStyle: ['responsive', 'hover', 'focus'],
+    fontWeight: ['responsive', 'hover', 'focus'],
+    textColor: ['responsive', 'hover', 'focus'],
+    textDecoration: ['responsive', 'hover', 'focus'],
+    textTransform: ['responsive', 'hover', 'focus'],
+    padding: ['responsive', 'hover', 'focus'],
+    scale: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+  },
+  plugins: [],
+}
