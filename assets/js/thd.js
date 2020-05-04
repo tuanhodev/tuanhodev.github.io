@@ -194,7 +194,8 @@ function topHeaderData() {
             @click="modalUser()"
             class="btn bg-themeSecondary text-center text-themeOnPrimary font-medium
             px-4 py-1 w-1/4 mt-8 lg:mx-0 mx-auto rounded-full">
-            Gọi Cho Tôi
+            <p class="hidden lg:flex"> Gọi Cho Tôi </p>
+            <span class="material-icons text-md lg:hidden">call</span>
           </div>
 
           <template x-if="isModal"
@@ -216,7 +217,7 @@ function topHeaderData() {
                 </div>
                 <!-- body modal -->
                 <div  class="text-xl mb-8 lg:mb-16 text-themeOnSecondary w-full leading-normal text-center">
-                  <h3 class="text-medium text-3xl">Lên hệ với Tôi</h3>
+                  <h3 class="text-medium text-3xl">Hồ Anh Tuấn</h3>
                   Chung cư B Gò Dầu
                   <br/>
                   Đường Tân Sơn Nhì, P.Tân Sơn Nhì
