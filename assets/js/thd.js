@@ -2,9 +2,9 @@
 function social() {
   return {
     brands: [
-      { key: `<img class="w-8 h-8" src="assets/images/brands/twitter.svg">` },
-      { key: `<img class="w-8 h-8" src="assets/images/brands/github.svg">` },
-      { key: `<img class="w-8 h-8" src="assets/images/brands/discord.svg">` },
+      { key: `assets/images/brands/twitter.svg` },
+      { key: `assets/images/brands/github.svg` },
+      { key: `assets/images/brands/discord.svg` },
     ]
   }
 }
@@ -14,48 +14,48 @@ function cardsData() {
     cards: [
       { key: 'Php', class: 'is-php',
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logophp.svg">
+          assets/images/brands/logophp.svg
         `
       },
       { key: 'Javascript', class: 'is-javascript', 
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logojavascript.svg">
+          assets/images/brands/logojavascript.svg
         `
       },
       { key: 'Vim', class: 'is-vim', 
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logovim.png">
+          assets/images/brands/logovim.png
         `
       },
       { key: 'Vuejs', class: 'is-vuejs', 
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logovuejs.png">
+          assets/images/brands/logovuejs.png
         `
       },
       { key: 'Laravel', class: 'is-laravel',
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logolaravel.svg">
+          assets/images/brands/logolaravel.svg
         `
       },
       { key: 'Alpinejs', class: 'is-alpinejs', 
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logoalpinejs.svg">
+          assets/images/brands/logoalpinejs.svg
         `
       },
       { key: 'Bootstrap', class: 'is-bootstrap', 
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logobootstrap.svg">
+          assets/images/brands/logobootstrap.svg
         `
       },
       { key: 'Tailwindcss', class: 'is-tailwindcss',
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logotailwindcss.svg">
+          assets/images/brands/logotailwindcss.svg
         `
       },
       /**
       { key: 'Gimp', class: 'is-gimp', 
         logo: `
-          <img class="w-full h-full image-in-card" src="assets/images/brands/logogimp.svg">
+          assets/images/brands/logogimp.svg
         `
       },
       **/
@@ -255,4 +255,19 @@ function modalUserData() {
     }
   }
 }
+
+function fetchData() {
+  return {
+    headerTitle: 'Ví dụ Alpinejs fetch Api',
+    users: [],
+  }
+}
+
+
+
+
+
+
+
+
 

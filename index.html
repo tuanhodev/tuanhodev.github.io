@@ -29,9 +29,11 @@
         class="space-x-8 flex justify-center cursor-default">
 
         <template x-for="item in brands">
-          <div x-html="item.key"
+          <div 
             class="w-12 h-12 bg-themeSecondary p-2 rounded-full
-            shadow-md flex items-center justify-center brand-logo">
+            shadow-md flex items-center justify-center brand-logo"
+            >
+            <img class="w-8 h-8" :src="item.key">
           </div>
         </template>
 
@@ -60,14 +62,16 @@
             :class="card.class"
             class="overflow-hidden col-span-2 lg:col-span-1 bg-gray-200 p-6 rounded-lg
             shadow-lg flex items-center justify-center">
-            <div class="w-full h-full" x-html="card.logo"></div>
+            <div class="w-full h-full">
+              <img class="w-full h-full image-in-card" :src="card.logo">
+            </div>
           </div>
         </template>
       </div>
 
     </section>
 
-    <section class="px-6 lg:px-64 mb-12 lg:mb-48">
+    <section class="px-6 lg:px-64 mb-12 lg:mb-24">
       <!-- header module 2 -->
       <div x-data="headerModuleData()"
         class="lg:mb-8 px-30 w-full flex flex-wrap text-themeText text-lg text-center">
@@ -99,6 +103,41 @@
               </div>
             </div>
 
+          </div>
+        </template>
+      </div>
+
+    </section>
+
+    <!-- fetch data -->
+    <section class="px-6 lg:px-64 mb-12 lg:mb-48" 
+      x-data="fetchData()"
+      x-init="fetch('https://jsonplaceholder.typicode.com/users')
+              .then(response => response.json())
+              .then(data => users = data)"
+              >
+      <div>
+        <!-- header module 2 -->
+        <div class="lg:mb-8 px-30 w-full flex flex-wrap text-themeText text-lg text-center">
+            <h2 x-text="headerTitle"
+              class="w-full text-center text-3xl font-bold mb-2 uppercase"
+              >
+            </h2>
+        </div>
+        <template x-for="(user, index) in users" :key="index">
+          <div class="w-full lg:flex rounded-lg shadow-md mb-8 bg-gray-300">
+      
+            <div class="p-6 w-full lg:w-3/4">
+              <div
+                class="mb-6 text-3xl text-left uppercase leading-none font-bold">
+                <p x-text="user.name"></p>
+              </div>
+              <div
+                class="overflow-hidden mb-6 text-lg text-left leading-normal break-words">
+      
+              </div>
+            </div>
+      
           </div>
         </template>
       </div>
